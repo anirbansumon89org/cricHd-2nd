@@ -25,7 +25,7 @@ jobs:
           python -m playwright install chromium
 
       - name: Run Main Script
-        run: python main.py
+        run: python scaper.py
 
       - name: Push to Current Repo
         run: |
