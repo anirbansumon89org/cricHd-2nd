@@ -131,7 +131,7 @@ def run():
             context.close()
         
         # র্যান্ডম স্লিপ টাইম
-        sleep_time = crypt_random.uniform(5, 10)
+        sleep_time = 10000
         print(f"⏳ Cooldown: Waiting for {sleep_time:.2f} seconds...")
         time.sleep(sleep_time)
 
