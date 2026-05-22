@@ -1,9 +1,9 @@
 name: Update Stream Links
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -42,41 +42,4 @@ jobs:
             echo "✓ Pushed to current repo successfully"
           fi
 
-      - name: Push to Remote Repo
-        env:
-          TOKEN: ${{ secrets.PAT_TOKEN }}
-        run: |
-          rm -rf remote
-          git clone https://x-access-token:${TOKEN}@github.com/anirbansumon89org/cricHd-playlist.git remote
-
-          mkdir -p remote/public
-
-          cp public/data.json remote/public/data.json || true
-          cp public/playlist.m3u remote/public/playlist.m3u || true
-
-          cd remote
-
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git config user.name "github-actions[bot]"
-
-          git add .
-
-          if git diff --staged --quiet; then
-            echo "No changes to commit in remote repo"
-            exit 0
-          fi
-
-          git commit -m "Auto Update - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-          
-          # Retry logic for push
-          for i in {1..3}; do
-            if git push origin main; then
-              echo "✓ Pushed to remote repo successfully"
-              exit 0
-            fi
-            echo "Push attempt $i failed, retrying..."
-            sleep 5
-          done
-          
-          echo "✗ Push to remote repo failed after 3 attempts"
-          exit 1
+     
