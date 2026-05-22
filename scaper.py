@@ -1,147 +1,134 @@
 import os
 import json
-import time
+import requests
 import random
 from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
 
-def run():
-    input_path = "tm/main.json"
-    output_dir = "public"
-    json_output = os.path.join(output_dir, "data.json")
-    m3u_output = os.path.join(output_dir, "playlist.m3u")
+def check_status(url, ref, org):
+    try:
+        headers = {"Referer": ref, "Origin": org, "User-Agent": "Mozilla/5.0"}
+        r = requests.head(url, headers=headers, timeout=5)
+        return "✅ LIVE" if r.status_code == 200 else f"⚠️ {r.status_code}"
+    except:
+        return "❌ DOWN"
 
-    if not os.path.exists(output_dir): 
-        os.makedirs(output_dir)
-    if not os.path.exists(input_path): 
-        print("❌ Input file not found!")
+def run():
+    input_file, out_dir = "tm/main.json", "public"
+    os.makedirs(out_dir, exist_ok=True)
+    
+    if not os.path.exists(input_file):
+        print("❌ Error: tm/main.json ফাইলটি পাওয়া যায়নি!")
         return
 
-    with open(input_path, "r", encoding="utf-8") as f:
-        source_channels = json.load(f)
+    with open(input_file, "r", encoding="utf-8") as f:
+        channels = json.load(f)
 
-    final_json_data = {"dev": "anirbansumon", "channels": []}
-    m3u_content = "#EXTM3U\n"
-
-    # বৈধ চ্যানেল ফিল্টার করা
-    valid_channels = [item for item in source_channels if item.get("stream")]
-    
-    # 🚀 ফিক্স: 'SystemRandom' ব্যবহার করে গিটহাব রানারে ১০০% নিশ্চিতভাবে র‍্যান্ডমাইজ করা
-    # এটি ওএসের ইন্টারনাল সিকিউরিটি ইঞ্জিন ব্যবহার করে প্রতিবার সম্পূর্ণ নতুন সিকোয়েন্স তৈরি করে
+    # ওএসের সিকিউরিটি ইঞ্জিন (SystemRandom) দিয়ে ১০০% র‍্যান্ডমাইজ করা
     crypt_random = random.SystemRandom()
-    crypt_random.shuffle(valid_channels)
-    print(f"🔀 Channels shuffled with SystemRandom. Total: {len(valid_channels)}")
+    crypt_random.shuffle(channels)
 
-    # হিউম্যান-লাইক ইউজার এজেন্ট লিস্ট
-    user_agents = [
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0",
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-    ]
+    total_channels = len(channels)
+    print(f"🔀 চ্যানেলগুলো র‍্যান্ডমলি সাজানো হয়েছে যেন সার্ভার ব্লক না করে।")
+    print(f"🚀 স্ক্র্যাপিং শুরু হচ্ছে... মোট চ্যানেল: {total_channels}\n" + "="*50)
 
-    for item in valid_channels:
-        target_url = item.get("stream")
-        channel_name = item.get("name", "Unknown")
-        logo_url = item.get("logo", "")
+    results = {"dev": "anirbansumon", "channels": []}
+    m3u = "#EXTM3U\n"
+    success_count = 0
 
-        # স্ট্রিম সার্ভারের নাম বের করা
-        server_domain = urlparse(target_url).netloc
-        
-        print(f"\n🖥️ Stream Server: {server_domain}")
-        print(f"🚀 Processing: {channel_name}...")
-        
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True, args=[
-                "--disable-http2", 
-                "--no-sandbox",
-                "--disable-setuid-sandbox",
-                "--disable-dev-shm-usage",
-                "--disable-blink-features=AutomationControlled"
-            ])
+    with sync_playwright() as p:
+        # মেইন ব্রাউজার ইঞ্জিন চালু করা
+        browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-gpu"])
+
+        for index, item in enumerate(channels, 1):
+            name = item.get("name", "Unknown")
+            target = item.get("stream")
             
-            # সিস্টেমের র্যান্ডম ইউজার এজেন্ট এবং স্ক্রিন সাইজ
-            selected_ua = crypt_random.choice(user_agents)
-            random_width = crypt_random.randint(1280, 1920)
-            random_height = crypt_random.randint(720, 1080)
-            
-            context = browser.new_context(
-                user_agent=selected_ua,
-                viewport={"width": random_width, "height": random_height},
-                bypass_csp=True
-            )
-            
+            # প্রগ্রেস মেসেজ
+            print(f"[{index}/{total_channels}] ⏳ Processing: {name}...", end="\r", flush=True)
+
+            if not target:
+                print(f"[{index}/{total_channels}] ❌ {name}: No Source URL found.       ")
+                continue
+
+            # স্ট্রিম ইউআরএল থেকে মেইন ডোমেইন/সার্ভার আলাদা করা
+            server_domain = urlparse(target).netloc
+            print(f"\n🖥️ Stream Server: {server_domain}")
+
+            # 🌐 🚀 ট্রিক: প্রতিটা চ্যানেলের জন্য সম্পূর্ণ নতুন ও ফ্রেশ উইন্ডো (Context) খোলা
+            # এটি একদম আলাদা ব্রাউজার হিসেবে কাজ করবে, কোনো পুরানো কুকি বা ট্র্যাকার থাকবে না
+            context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
             page = context.new_page()
             
-            # ইমেজ, ফন্ট এবং সিএসেস ব্লক
-            page.route("**/*", lambda route: route.abort() 
-                       if route.request.resource_type in ["image", "font", "stylesheet"] 
-                       else route.continue_())
+            # ফাস্ট লোডিংয়ের জন্য অপ্রয়োজনীয় রিসোর্স ব্লক
+            page.route("**/*.{png,jpg,jpeg,gif,css,woff}", lambda r: r.abort())
 
-            captured = {"url": None, "referer": target_url, "origin": "https://executeandship.com"}
-
-            def handle_request(request):
-                url = request.url
-                if ".m3u8" in url.lower():
-                    blacklist = ["chunk", "ad-", "telemetry", "google", "fb-", "log", "m3u8-video"]
-                    if not any(x in url.lower() for x in blacklist):
-                        if captured["url"] is None:
-                            captured["url"] = url
-                            captured["referer"] = request.headers.get("referer", target_url)
-                            captured["origin"] = request.headers.get("origin", "https://executeandship.com")
-                            print(f"✅ Found M3U8 for: {channel_name} [{server_domain}]")
-
-            page.on("request", handle_request)
+            links = []
+            page.on("request", lambda req: links.append({
+                "url": req.url, 
+                "ref": req.headers.get("referer", target),
+                "org": req.headers.get("origin", "https://executeandship.com")
+            }) if ".m3u8" in req.url.lower() and "chunk" not in req.url.lower() else None)
 
             try:
-                page.goto(target_url, wait_until="networkidle", timeout=45000)
+                page.goto(target, wait_until="domcontentloaded", timeout=45000)
                 
-                for _ in range(30): 
-                    if captured["url"]: 
-                        break
-                    page.wait_for_timeout(500)
+                page.wait_for_timeout(3000)
+                try:
+                    page.mouse.click(100, 100) # প্লেয়ারের উপরে ক্লিক ট্রিপার
+                except: pass
                 
-                if not captured["url"]:
-                    page.mouse.click(640, 360) 
-                    for _ in range(14):
-                        if captured["url"]: 
-                            break
-                        page.wait_for_timeout(500)
+                for _ in range(10):
+                    if any(".m3u8" in l["url"] for l in links): break
+                    page.wait_for_timeout(1000)
 
             except Exception as e:
-                print(f"⚠️ Error: {channel_name} [{server_domain}] -> {str(e)[:50]}")
+                pass
 
-            if captured["url"]:
-                final_json_data["channels"].append({
-                    "name": channel_name, 
-                    "url": captured["url"],
-                    "referer": captured["referer"], 
-                    "origin": captured["origin"]
+            # MASTER প্লেলিস্টকে প্রায়োরিটি দেওয়া
+            final = next((l for l in links if "master" in l["url"].lower()), None)
+            if not final and links:
+                final = links[0]
+
+            if final:
+                status = check_status(final["url"], final["ref"], final["org"])
+                success_count += 1
+                results["channels"].append({
+                    "name": name, 
+                    "url": final["url"], 
+                    "referer": final["ref"],
+                    "origin": final["org"]
                 })
                 
-                m3u_content += f'#EXTINF:-1 tvg-logo="{logo_url}",{channel_name}\n'
-                m3u_content += f'#EXTVLCOPT:http-referrer={captured["referer"]}\n'
-                m3u_content += f'#EXTVLCOPT:http-origin={captured["origin"]}\n'
-                m3u_content += f'#EXTVLCOPT:http-user-agent={selected_ua}\n'
-                m3u_content += f'{captured["url"]}\n'
+                m3u += f'#EXTINF:-1 tvg-logo="{item.get("logo","")}",{name}\n'
+                m3u += f'#EXTVLCOPT:http-referrer={final["ref"]}\n'
+                m3u += f'#EXTVLCOPT:http-origin={final["org"]}\n'
+                m3u += f'{final["url"]}\n'
+                
+                print(f"[{index}/{total_channels}] {status} | {name} [{server_domain}]")
             else:
-                print(f"❌ Failed to get link for: {channel_name} [{server_domain}]")
+                print(f"[{index}/{total_channels}] ❌ FAILED | {name} [{server_domain}]")
             
+            # 🔒 🚀 ট্রিক: কাজ শেষ হওয়া মাত্রই কারেন্ট পেজ এবং পুরো উইন্ডো বা কনটেক্সট ক্লোজ করে দেওয়া
             page.close()
             context.close()
-        
-        # র্যান্ডম স্লিপ টাইম
-        sleep_time = 10000
-        print(f"⏳ Cooldown: Waiting for {sleep_time:.2f} seconds...")
-        time.sleep(sleep_time)
 
-    # ডাটা সেভ করা
-    with open(json_output, "w", encoding="utf-8") as f: 
-        json.dump(final_json_data, f, indent=4)
-    with open(m3u_output, "w", encoding="utf-8") as f: 
-        f.write(m3u_content)
-        
-    print(f"\n✨ Task Finished! Success: {len(final_json_data['channels'])}/{len(valid_channels)}")
+            # একই সার্ভারে বারবার হিট পড়া আটকাতে ৪ থেকে ৮ সেকেন্ডের একটি ছোট র্যান্ডম বিরতি
+            sleep_time = crypt_random.uniform(4, 8)
+            time.sleep(sleep_time)
+
+        # পুরো স্ক্র্যাপিং শেষে মেইন ব্রাউজার বন্ধ করা
+        browser.close()
+
+    # ডাটা সেভ
+    with open(f"{out_dir}/data.json", "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=4)
+    with open(f"{out_dir}/playlist.m3u", "w", encoding="utf-8") as f:
+        f.write(m3u)
+
+    print("="*50)
+    print(f"✅ স্ক্র্যাপিং সম্পন্ন! সফল: {success_count} | ব্যর্থ: {total_channels - success_count}")
+    print(f"📁 ফাইল সেভ করা হয়েছে: {out_dir}/ ফোল্ডারে।")
 
 if __name__ == "__main__":
     run()
