@@ -3,51 +3,51 @@
     "channels": [
         {
             "name": "Fox Cricket",
-            "url": "https://dz4.bhalocast.com:7060/hls/cf0sp1.m3u8?md5=15K8FmHAflDLMJHFIAaWKQ&expires=1779475834&ch=cf0sp1&s=27e75b2ab4fcec6267181eb7949707bb",
+            "url": "https://oz1.bhalocast.com:7060/hls/cf0sp1.m3u8?md5=x6rhq7d8Lc0jGppdL1btFA&expires=1779491186&ch=cf0sp1&s=8d3a3bbeb001314b71ffb6229f56d74e",
             "referer": "https://bhalocast.com/",
-            "origin": "https://bhalocast.com"
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "Willow Extra",
+            "url": "https://oz1.bhalocast.com:7060/hls/wextres4.m3u8?md5=raMupZjEuy2BzQQCpPzOYQ&expires=1779491198&ch=wextres4&s=36acd03cc89af2cf88aa8bd63c016b5b",
+            "referer": "https://bhalocast.com/",
+            "origin": "https://executeandship.com"
         },
         {
             "name": "Sky Sports Cricket",
-            "url": "https://dz5.bhalocast.pro:7059/hls/dodosky2.m3u8?md5=OrVYYPwPDhrj6v4wfpC0Bg&expires=1779475846&ch=dodosky2&s=50e919329e3c6daa292a2c91d5155a55",
+            "url": "https://dz5.bhalocast.pro:7059/hls/dodosky2.m3u8?md5=be0kLIhmVuol6df7tjE1IA&expires=1779491220&ch=dodosky2&s=5d6113f4512823f56fcc97a860b7856e",
+            "referer": "https://bhalocast.pro/",
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "Willow HD",
+            "url": "https://dz5.bhalocast.pro:7059/hls/hdwillos4.m3u8?md5=yG1ArOue6LHnLzGE2D2kZA&expires=1779491233&ch=hdwillos4&s=605f14f294bd01b615b92b7c29c5a64c",
             "referer": "https://bhalocast.pro/",
             "origin": "https://executeandship.com"
         },
         {
             "name": "Asian Sports Cricket",
-            "url": "https://dz5.bhalocast.pro:7059/hls/asportspk.m3u8?md5=E2uxpfdNXEhSTHzwEzDorA&expires=1779475875&ch=asportspk&s=d249c74f71b49a18f8eb209ce981b23b",
+            "url": "https://dz5.bhalocast.pro:7059/hls/asportspk.m3u8?md5=ZLByIhoMxjBX9wtx54R67A&expires=1779491252&ch=asportspk&s=fc679dcd2618bcc99c3577731ea5a784",
             "referer": "https://bhalocast.pro/",
             "origin": "https://executeandship.com"
         },
         {
             "name": "Ten Sports",
-            "url": "https://cdn8.zohanayaan.com:1686/hls/tenspk.m3u8?md5=xm50leQu_O4BDR1TY8WIlA&expires=1779475917",
+            "url": "https://cdn4.zohanayaan.com:1686/hls/tenspk.m3u8?md5=T7XikL4WGxxSW8VU-ZIsow&expires=1779491270",
             "referer": "https://executeandship.com/",
             "origin": "https://executeandship.com"
         },
         {
-            "name": "Willow",
-            "url": "https://oz1.bhalocast.com:7060/hls/star1kibich4.m3u8?md5=0enlVDngYOsTe4knVwWUCw&expires=1779475927&ch=star1kibich4&s=883b14d800ba661ee2fca789e0429f3c",
+            "name": "T-sports",
+            "url": "https://oz1.bhalocast.com:7060/hls/willowala4.m3u8?md5=Yg_roqxxkle82TPD8fEFUQ&expires=1779491281&ch=willowala4&s=5690d671fb7ca907c33a6f8c8922ebce",
             "referer": "https://bhalocast.com/",
             "origin": "https://executeandship.com"
         },
         {
-            "name": "Star Sports 1 hindi",
-            "url": "https://dz4.bhalocast.com:7060/hls/wextres4.m3u8?md5=fRgwj_SP3TToMsiQ3WyoLw&expires=1779475940&ch=wextres4&s=35aa367f2fbc659004cffcf859138010",
+            "name": "Star Sports 1",
+            "url": "https://oz1.bhalocast.com:7060/hls/ptvskpr.m3u8?md5=DKkvv7iOz8I-2DKDxedd7w&expires=1779491311&ch=ptvskpr&s=ce100040ee23bd164ec8a5369601d842",
             "referer": "https://bhalocast.com/",
             "origin": "https://executeandship.com"
-        },
-        {
-            "name": "Ptv Sports Cricket",
-            "url": "https://dz4.bhalocast.com:7060/hls/hdwillos4.m3u8?md5=P8tT61RQFuhiW3K6yttjew&expires=1779475950&ch=hdwillos4&s=aebb5e46637710657b555a5f34487bd1",
-            "referer": "https://bhalocast.com/",
-            "origin": "https://executeandship.com"
-        },
-        {
-            "name": "Star Sports 2",
-            "url": "https://oz1.bhalocast.com:7060/hls/willowala4.m3u8?md5=v7T7GBr6gGpz37CPklYcZg&expires=1779475959&ch=willowala4&s=dce5a38233c70b76cc1f148b289561da",
-            "referer": "https://bhalocast.com/",
-            "origin": "https://bhalocast.com"
         }
     ]
 }
