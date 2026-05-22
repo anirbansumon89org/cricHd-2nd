@@ -2,7 +2,7 @@ import os
 import json
 import requests
 import random
-import time  # 🚀 ফিক্স: এই 'time' মডিউলটি ইমপোর্ট করা মিস হয়েছিল, যা এখন যুক্ত করা হয়েছে
+import time
 from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
 
@@ -45,7 +45,7 @@ def run():
             name = item.get("name", "Unknown")
             target = item.get("stream")
             
-            # প্র䪱েস মেসেজ
+            # প্রগ্রেস মেসেজ
             print(f"[{index}/{total_channels}] ⏳ Processing: {name}...", end="\r", flush=True)
 
             if not target:
@@ -90,24 +90,32 @@ def run():
             if not final and links:
                 final = links[0]
 
+            # 🚀 ফিক্স লজিক: লিঙ্ক পাওয়ার পর সেটির লাইভ স্ট্যাটাস চেক করা হচ্ছে
             if final:
                 status = check_status(final["url"], final["ref"], final["org"])
-                success_count += 1
-                results["channels"].append({
-                    "name": name, 
-                    "url": final["url"], 
-                    "referer": final["ref"],
-                    "origin": final["org"]
-                })
                 
-                m3u += f'#EXTINF:-1 tvg-logo="{item.get("logo","")}",{name}\n'
-                m3u += f'#EXTVLCOPT:http-referrer={final["ref"]}\n'
-                m3u += f'#EXTVLCOPT:http-origin={final["org"]}\n'
-                m3u += f'{final["url"]}\n'
-                
-                print(f"[{index}/{total_channels}] {status} | {name} [{server_domain}]")
+                # 📌 শুধুমাত্র স্ট্যাটাস '✅ LIVE' হলেই প্লেলিস্ট এবং ডাটায় অ্যাড হবে
+                if status == "✅ LIVE":
+                    success_count += 1
+                    results["channels"].append({
+                        "name": name, 
+                        "url": final["url"], 
+                        "referer": final["ref"],
+                        "origin": final["org"]
+                    })
+                    
+                    m3u += f'#EXTINF:-1 tvg-logo="{item.get("logo","")}",{name}\n'
+                    m3u += f'#EXTVLCOPT:http-referrer={final["ref"]}\n'
+                    m3u += f'#EXTVLCOPT:http-origin={final["org"]}\n'
+                    m3u += f'{final["url"]}\n'
+                    
+                    print(f"[{index}/{total_channels}] {status} | {name} [{server_domain}]")
+                else:
+                    # লিঙ্ক পাওয়া গেছে কিন্তু সার্ভার ৪০৪ বা অন্য এরর দিয়েছে (অর্থাৎ লাইভ নেই)
+                    print(f"[{index}/{total_channels}] ❌ FAILED | {name} [{server_domain}] (Status: {status})")
             else:
-                print(f"[{index}/{total_channels}] ❌ FAILED | {name} [{server_domain}]")
+                # পেজ থেকে কোনো লিঙ্কই খুঁজে পাওয়া যায়নি
+                print(f"[{index}/{total_channels}] ❌ FAILED | {name} [{server_domain}] (No link found)")
             
             # কাজ শেষ হওয়া মাত্রই কারেন্ট পেজ এবং পুরো উইন্ডো ক্লোজ করে দেওয়া
             page.close()
@@ -127,7 +135,7 @@ def run():
         f.write(m3u)
 
     print("="*50)
-    print(f"✅ স্ক্র্যাপিং সম্পন্ন! সফল: {success_count} | ব্যর্থ: {total_channels - success_count}")
+    print(f"✅ স্ক্র্যাপিং সম্পন্ন! সফল (লাইভ): {success_count} | ব্যর্থ/অফলাইন: {total_channels - success_count}")
     print(f"📁 ফাইল সেভ করা হয়েছে: {out_dir}/ ফোল্ডারে।")
 
 if __name__ == "__main__":
