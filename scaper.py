@@ -2,6 +2,7 @@ import os
 import json
 import requests
 import random
+import time  # 🚀 ফিক্স: এই 'time' মডিউলটি ইমপোর্ট করা মিস হয়েছিল, যা এখন যুক্ত করা হয়েছে
 from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
 
@@ -44,7 +45,7 @@ def run():
             name = item.get("name", "Unknown")
             target = item.get("stream")
             
-            # প্রগ্রেস মেসেজ
+            # প্র䪱েস মেসেজ
             print(f"[{index}/{total_channels}] ⏳ Processing: {name}...", end="\r", flush=True)
 
             if not target:
@@ -55,8 +56,7 @@ def run():
             server_domain = urlparse(target).netloc
             print(f"\n🖥️ Stream Server: {server_domain}")
 
-            # 🌐 🚀 ট্রিক: প্রতিটা চ্যানেলের জন্য সম্পূর্ণ নতুন ও ফ্রেশ উইন্ডো (Context) খোলা
-            # এটি একদম আলাদা ব্রাউজার হিসেবে কাজ করবে, কোনো পুরানো কুকি বা ট্র্যাকার থাকবে না
+            # প্রতিটা চ্যানেলের জন্য সম্পূর্ণ নতুন ও ফ্রেশ উইন্ডো (Context) খোলা
             context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
             page = context.new_page()
             
@@ -109,11 +109,11 @@ def run():
             else:
                 print(f"[{index}/{total_channels}] ❌ FAILED | {name} [{server_domain}]")
             
-            # 🔒 🚀 ট্রিক: কাজ শেষ হওয়া মাত্রই কারেন্ট পেজ এবং পুরো উইন্ডো বা কনটেক্সট ক্লোজ করে দেওয়া
+            # কাজ শেষ হওয়া মাত্রই কারেন্ট পেজ এবং পুরো উইন্ডো ক্লোজ করে দেওয়া
             page.close()
             context.close()
 
-            # একই সার্ভারে বারবার হিট পড়া আটকাতে ৪ থেকে ৮ সেকেন্ডের একটি ছোট র্যান্ডম বিরতি
+            # ৪ থেকে ৮ সেকেন্ডের একটি ছোট র্যান্ডম বিরতি
             sleep_time = crypt_random.uniform(4, 8)
             time.sleep(sleep_time)
 
