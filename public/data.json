@@ -2,39 +2,51 @@
     "dev": "anirbansumon",
     "channels": [
         {
-            "name": "Sky Sports Cricket",
-            "url": "https://dz5.bhalocast.pro:7059/hls/dodosky2.m3u8?md5=ow3AepcQGNhxTF9LdsoYXw&expires=1779556055&ch=dodosky2&s=c966e6407298fe1d0f805647ed8370cc",
-            "referer": "https://bhalocast.pro/",
-            "origin": "https://bhalocast.pro"
-        },
-        {
-            "name": "Willow HD",
-            "url": "https://dz5.bhalocast.pro:7059/hls/hdwillos4.m3u8?md5=cBHNP2Sm8YijvNYxgPC8zQ&expires=1779556076&ch=hdwillos4&s=ef0816648d0d0ff8fee65e43122ce893",
-            "referer": "https://bhalocast.pro/",
-            "origin": "https://bhalocast.pro"
-        },
-        {
             "name": "Ten Sports",
-            "url": "https://cdn8.zohanayaan.com:1686/hls/tenspk.m3u8?md5=3SngIPY5TRMOG8LmjNaNbg&expires=1779556113",
+            "url": "https://cdn7.zohanayaan.com:1686/hls/tenspk.m3u8?md5=9owrM-72Gs2tNOpp1D166A&expires=1779571059",
             "referer": "https://executeandship.com/",
             "origin": "https://executeandship.com"
         },
         {
-            "name": "Star Sports 2",
-            "url": "https://dz4.bhalocast.com:7060/hls/str1lhil4.m3u8?md5=tWZI6oXJz_nXcpKI3UBu7Q&expires=1779556126&ch=str1lhil4&s=31066cd49ccdc107796a66a9cc38890b",
+            "name": "Willow Extra",
+            "url": "https://oz2.bhalocast.com:7060/hls/str1lhil4.m3u8?md5=KHni9p5iuwDqH5adaXuxxQ&expires=1779571072&ch=str1lhil4&s=6dc5f242dbe264f3d3d98c3345c661df",
             "referer": "https://bhalocast.com/",
             "origin": "https://bhalocast.com"
         },
         {
-            "name": "Asian Sports Cricket",
-            "url": "https://dz5.bhalocast.pro:7059/hls/asportspk.m3u8?md5=XbA3p2pmL1LjJWD_qdhJGA&expires=1779556137&ch=asportspk&s=e69f1a862cc88e843a8062cbd874ba2a",
-            "referer": "https://bhalocast.pro/",
-            "origin": "https://bhalocast.pro"
+            "name": "Willow",
+            "url": "https://oz1.bhalocast.com:7060/hls/wextres4.m3u8?md5=SvqE9RDnT5INjm-xxgD9ng&expires=1779571082&ch=wextres4&s=603e12281f991d1397a72c94256453a5",
+            "referer": "https://bhalocast.com/",
+            "origin": "https://bhalocast.com"
         },
         {
-            "name": "Star Sports 1",
-            "url": "https://oz1.bhalocast.com:7060/hls/ptvskpr.m3u8?md5=uq9Wvkf8UlESKVrbW0IiEA&expires=1779556157&ch=ptvskpr&s=37e35b3467fdf530e3d204604073df50",
+            "name": "Sky Sports Cricket",
+            "url": "https://dz5.bhalocast.pro:7059/hls/dodosky2.m3u8?md5=LJIczvfJs_ZDD5SGMgX6dQ&expires=1779571092&ch=dodosky2&s=ecb13891a5129e99153cf81197cc445e",
+            "referer": "https://bhalocast.pro/",
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "T-sports",
+            "url": "https://oz1.bhalocast.com:7060/hls/willowala4.m3u8?md5=SsWioHf99Cc5UzNksD39rQ&expires=1779571102&ch=willowala4&s=da58435bad105b88725940af7e2dd9c4",
             "referer": "https://bhalocast.com/",
+            "origin": "https://bhalocast.com"
+        },
+        {
+            "name": "Willow HD",
+            "url": "https://dz5.bhalocast.pro:7059/hls/hdwillos4.m3u8?md5=ZtgxgmsuwLMnhrjbwHw8pQ&expires=1779571136&ch=hdwillos4&s=c472b94cb62703f65042a1d3be7b04c5",
+            "referer": "https://bhalocast.pro/",
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "Ptv Sports Cricket",
+            "url": "https://oz2.bhalocast.com:7060/hls/cf0sp1.m3u8?md5=cLU6pP_6vsR7TJpkycY4gQ&expires=1779571146&ch=cf0sp1&s=dbaa2cb3302ee43a6659dd1ae983c024",
+            "referer": "https://bhalocast.com/",
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "Asian Sports Cricket",
+            "url": "https://dz5.bhalocast.pro:7059/hls/asportspk.m3u8?md5=g_2975cv4MXOY6EDnZNpVg&expires=1779571157&ch=asportspk&s=409f7ef6ddccf1658137c190e6277f2c",
+            "referer": "https://bhalocast.pro/",
             "origin": "https://executeandship.com"
         }
     ]
