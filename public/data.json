@@ -2,62 +2,62 @@
     "dev": "anirbansumon",
     "channels": [
         {
-            "name": "Willow Extra",
-            "url": "https://oz1.bhalocast.com:7061/hls/wextres5.m3u8?md5=lVHpUrQBl5k9shz3oZ6r-g&expires=1780177101&ch=wextres5&s=6902749dc08d33857621c005ee082243",
+            "name": "Ptv Sports Cricket",
+            "url": "https://oz2.bhalocast.com:7060/hls/ptvskpr.m3u8?md5=YdAbmAxj--Wz9yoHUTQLFQ&expires=1780189498&ch=ptvskpr&s=1881fa8f74a0b92c466b17093e005c1f",
             "referer": "https://player0003.com/",
-            "origin": "https://executeandship.com"
+            "origin": "https://player0003.com"
         },
         {
-            "name": "Sky Sports Cricket",
-            "url": "https://dz5.bhalocast.pro:7059/hls/dodosky2.m3u8?md5=yu2uc_-w8QQN5_ytzd2E5Q&expires=1780177113&ch=dodosky2&s=983b3f4e6c6a2a8ab40485a30cb1defa",
-            "referer": "https://bhalocast.pro/",
+            "name": "Star Sports 1",
+            "url": "https://oz2.bhalocast.com:7060/hls/star1kibich5.m3u8?md5=DUAeofBVStGTxJ0x_Cl4kw&expires=1780189506&ch=star1kibich5&s=099ae235ecdad8fbaf3008b8a3bf8e59",
+            "referer": "https://player0003.com/",
             "origin": "https://executeandship.com"
         },
         {
             "name": "Willow",
-            "url": "https://oz2.bhalocast.com:7060/hls/willowala5.m3u8?md5=75SQv2gz3-BvT_ciKzsW4A&expires=1780177121&ch=willowala5&s=3bb25b3dca4241daa0c670ac7a2df667",
-            "referer": "https://player0003.com/",
-            "origin": "https://executeandship.com"
-        },
-        {
-            "name": "Asian Sports Cricket",
-            "url": "https://dz5.bhalocast.pro:7059/hls/asportspk.m3u8?md5=5-S4SPcJzkOYxtKicCCbgw&expires=1780177131&ch=asportspk&s=fe7caebb8c1f68ef300b2938dd4fe660",
-            "referer": "https://bhalocast.pro/",
-            "origin": "https://executeandship.com"
-        },
-        {
-            "name": "Fox Cricket",
-            "url": "https://oz1.bhalocast.com:7061/hls/cf0sp1.m3u8?md5=pPbDFPsuBylQvKGeVyy99g&expires=1780177141&ch=cf0sp1&s=a6ae9aede585c8c6ba8f4cdf35be3b38",
+            "url": "https://oz2.bhalocast.com:7060/hls/willowala5.m3u8?md5=I7Es7MbyUwrKjrUeuO3WXA&expires=1780189517&ch=willowala5&s=a0ef0b6ef4aea1f68e76372a518b44f9",
             "referer": "https://player0003.com/",
             "origin": "https://executeandship.com"
         },
         {
             "name": "Ten Sports",
-            "url": "https://cdn10.zohanayaan.com:1686/hls/tenspk.m3u8?md5=xTF9X69DfUxLzaIh7dD-Bw&expires=1780177148",
+            "url": "https://cdn10.zohanayaan.com:1686/hls/tenspk.m3u8?md5=NXElsAaUZBES2IpwxK21KQ&expires=1780189524",
             "referer": "https://executeandship.com/",
             "origin": "https://executeandship.com"
         },
         {
-            "name": "Star Sports 1",
-            "url": "https://oz2.bhalocast.com:7060/hls/star1kibich5.m3u8?md5=ohPdgMgXrM18lvVzzGR0-w&expires=1780177169&ch=star1kibich5&s=d2227875024c5ff7f776a0c926b7916a",
-            "referer": "https://player0003.com/",
-            "origin": "https://player0003.com"
-        },
-        {
-            "name": "Ptv Sports Cricket",
-            "url": "https://oz1.bhalocast.com:7061/hls/ptvskpr.m3u8?md5=1uxrRQif8GaC_DLq38kjZQ&expires=1780177190&ch=ptvskpr&s=495bc22d2f8f733d8290135aa4fda7cd",
-            "referer": "https://player0003.com/",
-            "origin": "https://executeandship.com"
-        },
-        {
-            "name": "Willow HD",
-            "url": "https://dz5.bhalocast.pro:7059/hls/hdwillos5.m3u8?md5=CFnoNnSYj86yWYc4x_-kJA&expires=1780177200&ch=hdwillos5&s=95e602cbc2bfa36a942bb424913bac39",
+            "name": "Asian Sports Cricket",
+            "url": "https://dz5.bhalocast.pro:7059/hls/asportspk.m3u8?md5=CyHZXBIWjF6yFZtJfzrA4A&expires=1780189536&ch=asportspk&s=328c1e9508daf08ebe7935a9b12babba",
             "referer": "https://bhalocast.pro/",
             "origin": "https://executeandship.com"
         },
         {
             "name": "Star Sports 1 hindi",
-            "url": "https://oz2.bhalocast.com:7060/hls/str1lhil5.m3u8?md5=sctQV9-l9wqxKYH0JEppoQ&expires=1780177219&ch=str1lhil5&s=ce19e4c353f363c2d62225583a1b3655",
+            "url": "https://oz1.bhalocast.com:7061/hls/str1lhil5.m3u8?md5=f0kDfJVFtivV5u8PAaMtsg&expires=1780189546&ch=str1lhil5&s=a4a1f3c7f9ae2b83a759ed0138c81ff7",
+            "referer": "https://player0003.com/",
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "Willow HD",
+            "url": "https://dz5.bhalocast.pro:7059/hls/hdwillos5.m3u8?md5=nuSjP9KUB-_-Q92shvbVpg&expires=1780189558&ch=hdwillos5&s=3c56532b292b8aa1e672cc948b66cf0a",
+            "referer": "https://bhalocast.pro/",
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "Fox Cricket",
+            "url": "https://oz1.bhalocast.com:7061/hls/cf0sp1.m3u8?md5=0DNP__I7gE-4uaZZOjpJ2w&expires=1780189566&ch=cf0sp1&s=afee9e7e65486f9417e22d2b01d1df41",
+            "referer": "https://player0003.com/",
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "Sky Sports Cricket",
+            "url": "https://dz5.bhalocast.pro:7059/hls/dodosky2.m3u8?md5=dx5usb7Z8-f3-vNjbxLhAw&expires=1780189589&ch=dodosky2&s=59b69791b3ac14bb44543a5dd8da6c34",
+            "referer": "https://bhalocast.pro/",
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "Willow Extra",
+            "url": "https://oz1.bhalocast.com:7061/hls/wextres5.m3u8?md5=DqAYWFR5WsmbmBURKLqKpg&expires=1780189608&ch=wextres5&s=95292751703e2719e4dc5b7245c1608f",
             "referer": "https://player0003.com/",
             "origin": "https://executeandship.com"
         }
