@@ -1,41 +1,37 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/1/12/Ten_Sports_Logo.png",Ten Sports
-#EXTVLCOPT:http-referrer=https://executeandship.com/
-#EXTVLCOPT:http-origin=https://executeandship.com
-https://cdn10.zohanayaan.com:1686/hls/tenspk.m3u8?md5=Q6VnoCXmOZWcAzBMsDu_qw&expires=1780089309
-#EXTINF:-1 tvg-logo="https://bobgoldpr.com/wp-content/uploads/2024/10/Willow-Sports-Stacked-Logo-White-e1728946503266.png",Willow
-#EXTVLCOPT:http-referrer=https://player0003.com/
-#EXTVLCOPT:http-origin=https://executeandship.com
-https://dz4.bhalocast.com:7060/hls/willowala5.m3u8?md5=ajO4orIowVjIdgXJGbYniw&expires=1780088120&ch=willowala5&s=90a4dcc09a093a7a38a737ed4cb4c977
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/Qhs1jcocO2FenxF7j5DBVn-3lQV3cPhnsJCfeo3fAvEPzdsUx1RCb8Ka956B_ZEhAA8=w600-h300-pc0xffffff-pd",Asian Sports Cricket
-#EXTVLCOPT:http-referrer=https://bhalocast.pro/
-#EXTVLCOPT:http-origin=https://executeandship.com
-https://dz5.bhalocast.pro:7059/hls/asportspk.m3u8?md5=Gx6BY2IX7OFWOpMyWjPsGg&expires=1780089331&ch=asportspk&s=32b354117c661ed7dcda2ce86cd3103b
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/wuaaWCRlO8isR_c-kjsKisw6KPfXQ1-GGrVwdE8q8OXeEwnwb9lqdNUJldFYYdoK9EHt=w240-h480-rw",Sky Sports Cricket
-#EXTVLCOPT:http-referrer=https://bhalocast.pro/
-#EXTVLCOPT:http-origin=https://executeandship.com
-https://dz5.bhalocast.pro:7059/hls/dodosky2.m3u8?md5=eTILaLtF1_kCIx-6pIy9Qw&expires=1780089363&ch=dodosky2&s=4381bab5f40cfb1ee5c7eb7ae6c0bda4
-#EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mMJL3P-vcTLif2h4V_S17ksNozzOICQKXMMmfdowlx9Q=s900-c-k-c0x00ffffff-no-rj",Fox Cricket
-#EXTVLCOPT:http-referrer=https://player0003.com/
-#EXTVLCOPT:http-origin=https://executeandship.com
-https://dz4.bhalocast.com:7060/hls/cf0sp1.m3u8?md5=QL4doTSIIJdVMOjXfJ7mKg&expires=1780088172&ch=cf0sp1&s=6cf4244081d24a107f0fd3371f9da030
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/960px-Star_Sports_1_HD.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",Star Sports 1 hindi
 #EXTVLCOPT:http-referrer=https://player0003.com/
 #EXTVLCOPT:http-origin=https://executeandship.com
-https://oz2.bhalocast.com:7060/hls/str1lhil5.m3u8?md5=jaiyER2S7HIvvTgI-Dd5LA&expires=1780088182&ch=str1lhil5&s=e3b16705ff1db3096d7a2dd6aa05f07f
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/960px-Star_Sports_1_HD.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",Star Sports 1
+https://oz2.bhalocast.com:7060/hls/str1lhil5.m3u8?md5=Tf3CC0MEvZ7DcglKrnG-5Q&expires=1780103950&ch=str1lhil5&s=8978e99ca13ea64c2d77d773b738380f
+#EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mMJL3P-vcTLif2h4V_S17ksNozzOICQKXMMmfdowlx9Q=s900-c-k-c0x00ffffff-no-rj",Fox Cricket
 #EXTVLCOPT:http-referrer=https://player0003.com/
 #EXTVLCOPT:http-origin=https://executeandship.com
-https://oz2.bhalocast.com:7060/hls/star1kibich5.m3u8?md5=D7-lF2CjiXNy1kpfmm0Fig&expires=1780088203&ch=star1kibich5&s=386c039952a3efbda40c7d85bccd78c8
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFcBFg8Q5b5_IdXzDk_QP33SYzPBAFVa-LQA&s",Ptv Sports Cricket
-#EXTVLCOPT:http-referrer=https://player0003.com/
-#EXTVLCOPT:http-origin=https://executeandship.com
-https://dz4.bhalocast.com:7060/hls/ptvskpr.m3u8?md5=wvVe_HmlYmclECYnPgWJFw&expires=1780088211&ch=ptvskpr&s=798f105da40f2b7564736eeb56aa05bc
+https://oz2.bhalocast.com:7060/hls/cf0sp1.m3u8?md5=lwKD7GeCjFFSmpljjRDcdg&expires=1780103975&ch=cf0sp1&s=2e6f8c48bd660b28ea4e8025eabcf444
 #EXTINF:-1 tvg-logo="https://www.newshd.pk/wp-content/uploads/2022/12/willowxtra-sqt.png",Willow Extra
 #EXTVLCOPT:http-referrer=https://player0003.com/
 #EXTVLCOPT:http-origin=https://executeandship.com
-https://oz1.bhalocast.com:7061/hls/wextres5.m3u8?md5=2QvtcpPiaUI_xm_EqZc4iQ&expires=1780088220&ch=wextres5&s=0897344d49b8248b892daaf9785ad0c2
+https://oz2.bhalocast.com:7060/hls/wextres5.m3u8?md5=Ng9pKYSZE-NmPRPgCzFB_A&expires=1780103986&ch=wextres5&s=30abaf3e8d2505d01ac5522e2458911d
+#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/Qhs1jcocO2FenxF7j5DBVn-3lQV3cPhnsJCfeo3fAvEPzdsUx1RCb8Ka956B_ZEhAA8=w600-h300-pc0xffffff-pd",Asian Sports Cricket
+#EXTVLCOPT:http-referrer=https://bhalocast.pro/
+#EXTVLCOPT:http-origin=https://bhalocast.pro
+https://dz5.bhalocast.pro:7059/hls/asportspk.m3u8?md5=1qZ1RVMHVq4OpTc6bXAapA&expires=1780103997&ch=asportspk&s=8d6efddae9518fae8d2a5f9003e2f3f8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/1/12/Ten_Sports_Logo.png",Ten Sports
+#EXTVLCOPT:http-referrer=https://executeandship.com/
+#EXTVLCOPT:http-origin=https://executeandship.com
+https://cdn6.zohanayaan.com:1686/hls/tenspk.m3u8?md5=Uy799EeG-lsTh1raW5GsqA&expires=1780104008
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFcBFg8Q5b5_IdXzDk_QP33SYzPBAFVa-LQA&s",Ptv Sports Cricket
+#EXTVLCOPT:http-referrer=https://player0003.com/
+#EXTVLCOPT:http-origin=https://executeandship.com
+https://oz2.bhalocast.com:7060/hls/ptvskpr.m3u8?md5=VIdHnUHqZwgaJ8SPiga_9w&expires=1780104020&ch=ptvskpr&s=d6c2c825094978c7f26519714f44de6e
+#EXTINF:-1 tvg-logo="https://bobgoldpr.com/wp-content/uploads/2024/10/Willow-Sports-Stacked-Logo-White-e1728946503266.png",Willow
+#EXTVLCOPT:http-referrer=https://player0003.com/
+#EXTVLCOPT:http-origin=https://executeandship.com
+https://oz2.bhalocast.com:7060/hls/willowala5.m3u8?md5=C4dqLbUPko8Vh_vHdBskzA&expires=1780104053&ch=willowala5&s=f3b83e4a27c67a1932c8635fb5392334
 #EXTINF:-1 tvg-logo="https://bobgoldpr.com/wp-content/uploads/2024/10/Willow-Sports-Stacked-Logo-White-e1728946503266.png",Willow HD
 #EXTVLCOPT:http-referrer=https://bhalocast.pro/
-#EXTVLCOPT:http-origin=https://executeandship.com
-https://dz5.bhalocast.pro:7059/hls/hdwillos5.m3u8?md5=Kh530EHOSTXIuQNHLJKtWQ&expires=1780089429&ch=hdwillos5&s=405fa4c222d2a93c3ba91a69c6a97140
+#EXTVLCOPT:http-origin=https://bhalocast.pro
+https://dz5.bhalocast.pro:7059/hls/hdwillos5.m3u8?md5=cEGw9iZ0QhTF0GQuhVrIUw&expires=1780104087&ch=hdwillos5&s=abcff974e08fa57f68ddb7d90d066ae0
+#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/wuaaWCRlO8isR_c-kjsKisw6KPfXQ1-GGrVwdE8q8OXeEwnwb9lqdNUJldFYYdoK9EHt=w240-h480-rw",Sky Sports Cricket
+#EXTVLCOPT:http-referrer=https://bhalocast.pro/
+#EXTVLCOPT:http-origin=https://bhalocast.pro
+https://dz5.bhalocast.pro:7059/hls/dodosky2.m3u8?md5=eXJ4Fw1r1h6IHmtOt3nugA&expires=1780104097&ch=dodosky2&s=9a5a95a2ba9049374629a622f3ac34c7
