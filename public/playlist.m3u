@@ -1,49 +1,49 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1FD9yhuz7GuwNp7OTO6OD0IqI8jgjs3pK0w&s",Star Sports 2
-#EXTVLCOPT:http-referrer=https://player0003.com/
-#EXTVLCOPT:http-origin=https://player0003.com
-https://oz2.player0003.com:7060/hls/star2cl5.m3u8?md5=w6FR3tbD9I7k9yGMLpJvoA&expires=1780704343&ch=star2cl5&s=f12b1838b4bd62a099ab7421274de45c
 #EXTINF:-1 tvg-logo="https://bobgoldpr.com/wp-content/uploads/2024/10/Willow-Sports-Stacked-Logo-White-e1728946503266.png",Willow HD
 #EXTVLCOPT:http-referrer=https://bhalocast.pro/
 #EXTVLCOPT:http-origin=https://executeandship.com
-https://dz5.bhalocast.pro:7059/hls/hdwillos5.m3u8?md5=sNTt3DYVZke9aSenzOOnRQ&expires=1780704352&ch=hdwillos5&s=91541a3db05bb57922bf0b87486cb7b6
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/960px-Star_Sports_1_HD.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",Star Sports 1
-#EXTVLCOPT:http-referrer=https://player0003.com/
-#EXTVLCOPT:http-origin=https://executeandship.com
-https://oz2.player0003.com:7060/hls/star1kibich5.m3u8?md5=o3pgPzieOBP_JtxpNE2-wQ&expires=1780704360&ch=star1kibich5&s=601bb7085cbaf38fce6edfa7ea0b5c4a
-#EXTINF:-1 tvg-logo="https://www.newshd.pk/wp-content/uploads/2022/12/willowxtra-sqt.png",Willow Extra
-#EXTVLCOPT:http-referrer=https://player0003.com/
-#EXTVLCOPT:http-origin=https://executeandship.com
-https://oz2.player0003.com:7060/hls/wextres5.m3u8?md5=SG1JDjCVF5w_KrEqLR_5ig&expires=1780704372&ch=wextres5&s=b3aaecda6176db9e701363bf95992f40
+https://dz5.bhalocast.pro:7059/hls/hdwillos5.m3u8?md5=8Q2Dqz6W5KuxoRaAPy727g&expires=1780738623&ch=hdwillos5&s=0400cefbcf0ac09af327d66f17f27bef
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/960px-Star_Sports_1_HD.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",Star Sports 1 hindi
 #EXTVLCOPT:http-referrer=https://player0003.com/
 #EXTVLCOPT:http-origin=https://executeandship.com
-https://oz2.player0003.com:7060/hls/str1lhil5.m3u8?md5=w2NdNaqDGdrdhCarBHYdUQ&expires=1780704380&ch=str1lhil5&s=4516b6a51500df4c36536eaf1f760d39
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/Qhs1jcocO2FenxF7j5DBVn-3lQV3cPhnsJCfeo3fAvEPzdsUx1RCb8Ka956B_ZEhAA8=w600-h300-pc0xffffff-pd",Asian Sports Cricket
-#EXTVLCOPT:http-referrer=https://bhalocast.pro/
-#EXTVLCOPT:http-origin=https://executeandship.com
-https://dz5.bhalocast.pro:7059/hls/asportspk.m3u8?md5=7KacZAjdiDX59_ORCjlfoA&expires=1780704391&ch=asportspk&s=a3e8cf355f1abfb380721f9ccf6bcb8d
+https://oz1.player0003.com:7061/hls/str1lhil5.m3u8?md5=c2qybbScelZI9r3F-QhV3Q&expires=1780738635&ch=str1lhil5&s=1e4a7364b782a8caa8373cd30cb78372
 #EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/wuaaWCRlO8isR_c-kjsKisw6KPfXQ1-GGrVwdE8q8OXeEwnwb9lqdNUJldFYYdoK9EHt=w240-h480-rw",Sky Sports Cricket
 #EXTVLCOPT:http-referrer=https://bhalocast.pro/
 #EXTVLCOPT:http-origin=https://executeandship.com
-https://dz5.bhalocast.pro:7059/hls/dodosky2.m3u8?md5=5xtRNrZaaCSnDP5_KV3ZKA&expires=1780704402&ch=dodosky2&s=f50f60b609e97625c7ee809b19af3470
-#EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mMJL3P-vcTLif2h4V_S17ksNozzOICQKXMMmfdowlx9Q=s900-c-k-c0x00ffffff-no-rj",Fox Cricket
-#EXTVLCOPT:http-referrer=https://player0003.com/
+https://dz5.bhalocast.pro:7059/hls/dodosky2.m3u8?md5=hmxOp_0zzFzAJN4Rwz-XtA&expires=1780738657&ch=dodosky2&s=7f23ef1ce4d37f0b2eeb527dfa164846
+#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/Qhs1jcocO2FenxF7j5DBVn-3lQV3cPhnsJCfeo3fAvEPzdsUx1RCb8Ka956B_ZEhAA8=w600-h300-pc0xffffff-pd",Asian Sports Cricket
+#EXTVLCOPT:http-referrer=https://bhalocast.pro/
 #EXTVLCOPT:http-origin=https://executeandship.com
-https://oz2.player0003.com:7060/hls/cf0sp1.m3u8?md5=IiG8jOZGw0mTP3eQOHEQrw&expires=1780704411&ch=cf0sp1&s=5c27c1da43a760b84e5123b30589353c
+https://dz5.bhalocast.pro:7059/hls/asportspk.m3u8?md5=BIx-thqkRYAInAmZIbYTzA&expires=1780738667&ch=asportspk&s=9a7337d63a1d59e0ff0a61676b6732c9
 #EXTINF:-1 tvg-logo="https://bobgoldpr.com/wp-content/uploads/2024/10/Willow-Sports-Stacked-Logo-White-e1728946503266.png",Willow
 #EXTVLCOPT:http-referrer=https://player0003.com/
 #EXTVLCOPT:http-origin=https://executeandship.com
-https://oz2.player0003.com:7060/hls/willowala5.m3u8?md5=G0wG9laKPVk_Tp7qAJtxMA&expires=1780704422&ch=willowala5&s=be784055ca1799974b21ac29098049fc
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFcBFg8Q5b5_IdXzDk_QP33SYzPBAFVa-LQA&s",Ptv Sports Cricket
-#EXTVLCOPT:http-referrer=https://player0003.com/
-#EXTVLCOPT:http-origin=https://executeandship.com
-https://oz2.player0003.com:7060/hls/ptvskpr.m3u8?md5=c5N76t1ewCWkDRRCrMF-3g&expires=1780704431&ch=ptvskpr&s=dbf15d0d60fd80045494ec0b30161ada
+https://oz2.player0003.com:7060/hls/willowala5.m3u8?md5=Em2uhnIC6fTdV3HEg2I62w&expires=1780738678&ch=willowala5&s=6477b36e7a2b37d088408ff7232e122c
 #EXTINF:-1 tvg-logo="https://media.licdn.com/dms/image/v2/C560BAQEkzy6nAcsyag/company-logo_200_200/company-logo_200_200/0/1630662269264?e=2147483647&v=beta&t=Xyxc5WJFZRKGMmHUyjXuUmOmYGO9bgGLbkwV9uyduxo",T-sports
 #EXTVLCOPT:http-referrer=https://player0003.com/
 #EXTVLCOPT:http-origin=https://executeandship.com
-https://oz2.player0003.com:7060/hls/gtvbd.m3u8?md5=dLksVKDAFrYb6r3fDvx_LQ&expires=1780704441&ch=gtvbd&s=21ad9b950b676d266bd9fc836cfc8bb6
+https://oz1.player0003.com:7061/hls/gtvbd.m3u8?md5=1uWZ6mI8ThkGjraxT7BYPw&expires=1780738688&ch=gtvbd&s=7a36a292a32e480b6d832676afe7175f
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFcBFg8Q5b5_IdXzDk_QP33SYzPBAFVa-LQA&s",Ptv Sports Cricket
+#EXTVLCOPT:http-referrer=https://player0003.com/
+#EXTVLCOPT:http-origin=https://executeandship.com
+https://oz1.player0003.com:7061/hls/ptvskpr.m3u8?md5=AOQY6wa6Ha5sUyhO_6OOGw&expires=1780738697&ch=ptvskpr&s=771aa68d7a1660f41e1a3319cf07e2d0
+#EXTINF:-1 tvg-logo="https://www.newshd.pk/wp-content/uploads/2022/12/willowxtra-sqt.png",Willow Extra
+#EXTVLCOPT:http-referrer=https://player0003.com/
+#EXTVLCOPT:http-origin=https://executeandship.com
+https://oz2.player0003.com:7060/hls/wextres5.m3u8?md5=JIUN7csUYbGe-9_s2t6x1g&expires=1780738708&ch=wextres5&s=33afc4fb88989abe62c069bd6ea097e6
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Star_Sports_1_HD.png/960px-Star_Sports_1_HD.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",Star Sports 1
+#EXTVLCOPT:http-referrer=https://player0003.com/
+#EXTVLCOPT:http-origin=https://executeandship.com
+https://oz1.player0003.com:7061/hls/star1kibich5.m3u8?md5=vJNmbXJIcXzFWZlnIwq8uA&expires=1780738719&ch=star1kibich5&s=915aca63079044f2e8c88d553744874b
+#EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mMJL3P-vcTLif2h4V_S17ksNozzOICQKXMMmfdowlx9Q=s900-c-k-c0x00ffffff-no-rj",Fox Cricket
+#EXTVLCOPT:http-referrer=https://player0003.com/
+#EXTVLCOPT:http-origin=https://executeandship.com
+https://oz2.player0003.com:7060/hls/cf0sp1.m3u8?md5=Hpzj3nofnKSQblxvZlcV0Q&expires=1780738729&ch=cf0sp1&s=f68a9ce0e50afe481e96f07aefbca3b3
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1FD9yhuz7GuwNp7OTO6OD0IqI8jgjs3pK0w&s",Star Sports 2
+#EXTVLCOPT:http-referrer=https://player0003.com/
+#EXTVLCOPT:http-origin=https://executeandship.com
+https://oz1.player0003.com:7061/hls/star2cl5.m3u8?md5=ObMZEBT87-MK5sh07FlzQQ&expires=1780738737&ch=star2cl5&s=a9e064407923faf13d07bbb54d46922f
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/1/12/Ten_Sports_Logo.png",Ten Sports
 #EXTVLCOPT:http-referrer=https://executeandship.com/
 #EXTVLCOPT:http-origin=https://executeandship.com
-https://cdn1.zohanayaan.com:1686/hls/tenspk.m3u8?md5=JgF6Pd4tlx92TvEQTQap7w&expires=1780704459
+https://cdn1.zohanayaan.com:1686/hls/tenspk.m3u8?md5=1me3hdxzAsCzrlkFNWIPrA&expires=1780738744
