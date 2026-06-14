@@ -2,74 +2,74 @@
     "dev": "anirbansumon",
     "channels": [
         {
-            "name": "Willow Extra",
-            "url": "https://oz1.player0003.com:7061/hls/wextres5.m3u8?md5=Da-HZIJ8FUudz5739vFGJA&expires=1781407098&ch=wextres5&s=1be645dd8318fdc9befad08b042386bc",
+            "name": "Willow",
+            "url": "https://oz2.player0003.com:7060/hls/willowala5.m3u8?md5=TwIjuE0zLQJ45KyQjWnqTQ&expires=1781423919&ch=willowala5&s=ee02ee7eb270ff2fcf1bafa1c55470a0",
             "referer": "https://player0003.com/",
             "origin": "https://executeandship.com"
         },
         {
-            "name": "Asian Sports Cricket",
-            "url": "https://dz5.bhalocast.pro:7059/hls/asportspk.m3u8?md5=sY6XdSPJPC6r1_nW83kk2A&expires=1781407106&ch=asportspk&s=04d9112765eeb73e66b961e38c64a68b",
-            "referer": "https://bhalocast.pro/",
-            "origin": "https://executeandship.com"
-        },
-        {
-            "name": "Star Sports 1",
-            "url": "https://oz2.player0003.com:7060/hls/star1kibich5.m3u8?md5=UhqpS836MowzbAvaSapS7g&expires=1781407117&ch=star1kibich5&s=bf128038ec4fa371705235a97b87da9e",
-            "referer": "https://player0003.com/",
-            "origin": "https://executeandship.com"
-        },
-        {
-            "name": "Star Sports 1 hindi",
-            "url": "https://oz2.player0003.com:7060/hls/str1lhil5.m3u8?md5=BhQdAwtL8c0nZYeRoGC99A&expires=1781407128&ch=str1lhil5&s=a8498a989a00e53123ec9fd09180a592",
-            "referer": "https://player0003.com/",
-            "origin": "https://executeandship.com"
-        },
-        {
-            "name": "T-sports",
-            "url": "https://oz1.player0003.com:7061/hls/gtvbd.m3u8?md5=8--wX46uqnvr9avjIZvxYw&expires=1781407138&ch=gtvbd&s=bdf810bfaf5e3676bfd09779f870c74e",
-            "referer": "https://player0003.com/",
-            "origin": "https://player0003.com"
-        },
-        {
-            "name": "Ptv Sports Cricket",
-            "url": "https://oz2.player0003.com:7060/hls/ptvskpr.m3u8?md5=CCvLcF-2WD_CZTmlpJpHWw&expires=1781407148&ch=ptvskpr&s=92d0b3ebb97e71014cee46e2741660ca",
+            "name": "Fox Cricket",
+            "url": "https://oz2.player0003.com:7060/hls/cf0sp1.m3u8?md5=YZcsNLFWeDgzVYamGLKQfg&expires=1781423931&ch=cf0sp1&s=5bf019be2b45cce38ff24bf7377524ae",
             "referer": "https://player0003.com/",
             "origin": "https://executeandship.com"
         },
         {
             "name": "Star Sports 2",
-            "url": "https://oz2.player0003.com:7060/hls/star2cl5.m3u8?md5=YpS2fZJdX1TUGhpZTLxBKg&expires=1781407158&ch=star2cl5&s=f275ecdbae1d34784d31c30d4fe00103",
+            "url": "https://oz1.player0003.com:7061/hls/star2cl5.m3u8?md5=NhrKX8Rz07hG4H4O7vRoEw&expires=1781423953&ch=star2cl5&s=2f811349a20b150a55738951d5563dd2",
+            "referer": "https://player0003.com/",
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "Willow Extra",
+            "url": "https://oz2.player0003.com:7060/hls/wextres5.m3u8?md5=vUM7aaNOmGctI2-QqHngMA&expires=1781423964&ch=wextres5&s=eb45da64aff75897eef0f51fc18caa38",
+            "referer": "https://player0003.com/",
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "Star Sports 1 hindi",
+            "url": "https://oz1.player0003.com:7061/hls/str1lhil5.m3u8?md5=cynlslQWfhyNWBhjYzNXsg&expires=1781423973&ch=str1lhil5&s=a631c30c1bdde1dd91627ee43612401b",
             "referer": "https://player0003.com/",
             "origin": "https://executeandship.com"
         },
         {
             "name": "Sky Sports Cricket",
-            "url": "https://dz5.bhalocast.pro:7059/hls/dodosky2.m3u8?md5=nMjOItVdeh71-wCLdPWRnw&expires=1781407169&ch=dodosky2&s=a1cb9dcafaa7d122ec21b6d584b9f658",
+            "url": "https://dz5.bhalocast.pro:7059/hls/dodosky2.m3u8?md5=xwU1CrEngmigW2toNJ5Kvg&expires=1781423981&ch=dodosky2&s=ad762bd92dd1f68bdbd3042f43233d6a",
             "referer": "https://bhalocast.pro/",
             "origin": "https://executeandship.com"
         },
         {
             "name": "Willow HD",
-            "url": "https://dz5.bhalocast.pro:7059/hls/hdwillos5.m3u8?md5=ggZ8RLZ2Iqf9rknKXLV4SA&expires=1781407178&ch=hdwillos5&s=31f244751c49c8aaca8801988052b607",
+            "url": "https://dz5.bhalocast.pro:7059/hls/hdwillos5.m3u8?md5=QCcyy-tXt2XtfTPmdwxsFQ&expires=1781423991&ch=hdwillos5&s=b1c144b8e8e1e843d3dfea8810963985",
             "referer": "https://bhalocast.pro/",
             "origin": "https://executeandship.com"
         },
         {
-            "name": "Fox Cricket",
-            "url": "https://oz1.player0003.com:7061/hls/cf0sp1.m3u8?md5=Qeoeh758GcR83r6lKgwYqQ&expires=1781407187&ch=cf0sp1&s=11a3ef995d91e84d3f0573940b6b95ba",
-            "referer": "https://player0003.com/",
-            "origin": "https://executeandship.com"
-        },
-        {
             "name": "Ten Sports",
-            "url": "https://cdn7.zohanayaan.com:1686/hls/tenspk.m3u8?md5=Q20kNVee_g9xaveFEh3VyA&expires=1781407197",
+            "url": "https://cdn1.zohanayaan.com:1686/hls/tenspk.m3u8?md5=RHpp8mNSs27JkadOx4ZSCg&expires=1781424002",
             "referer": "https://executeandship.com/",
             "origin": "https://executeandship.com"
         },
         {
-            "name": "Willow",
-            "url": "https://oz2.player0003.com:7060/hls/willowala5.m3u8?md5=79J_kgEDWx-NORHD9jtNkg&expires=1781407207&ch=willowala5&s=fc8c9c9e6946dce26606928439ad063b",
+            "name": "Star Sports 1",
+            "url": "https://oz2.player0003.com:7060/hls/star1kibich5.m3u8?md5=kBuIlRYmSyG7M2sdkjl-SQ&expires=1781424013&ch=star1kibich5&s=673a9f79a54313203647e6afe795ad27",
+            "referer": "https://player0003.com/",
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "Asian Sports Cricket",
+            "url": "https://dz5.bhalocast.pro:7059/hls/asportspk.m3u8?md5=NqmcXRnoX8Yp_vSqDCXKkA&expires=1781424024&ch=asportspk&s=500af4c16a495dc9543c3b1054e1f4d6",
+            "referer": "https://bhalocast.pro/",
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "T-sports",
+            "url": "https://oz1.player0003.com:7061/hls/gtvbd.m3u8?md5=_eOOs3NPsbYZtCGQ85R4Tg&expires=1781424034&ch=gtvbd&s=9bea74976d51f3294a19c33095a2b61d",
+            "referer": "https://player0003.com/",
+            "origin": "https://executeandship.com"
+        },
+        {
+            "name": "Ptv Sports Cricket",
+            "url": "https://oz1.player0003.com:7061/hls/ptvskpr.m3u8?md5=Z60tIvQIO2YQDuzlRrY0OQ&expires=1781424043&ch=ptvskpr&s=4bcbad80b91d5a09c9223016ab5704ab",
             "referer": "https://player0003.com/",
             "origin": "https://executeandship.com"
         }
