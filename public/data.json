@@ -1,11 +1,4 @@
 {
     "dev": "anirbansumon",
-    "channels": [
-        {
-            "name": "Ten Sports",
-            "url": "https://cdn1.zohanayaan.com:1686/hls/tenspk.m3u8?md5=kRlV-u7mltLbftu1Lf0blw&expires=1782510100",
-            "referer": "https://executeandship.com/",
-            "origin": "https://executeandship.com"
-        }
-    ]
+    "channels": []
 }
